@@ -7,7 +7,7 @@ hoverSlide works as a stand-alone navigation solution,
 and can also work in sync with topside navbar (check it out on the JSFanatik website!).
 
 #Implement Dependencies
-Download the plugin from either NPM, Yarn, or GitHub. 
+Download the plugin from GitHub. Add the following file link before your closing body tag: 
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/hoverslide-cdn.PNG" />
 
