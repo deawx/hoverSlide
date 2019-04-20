@@ -9,7 +9,7 @@ and can also work in sync with topside navbar (check it out on the JSFanatik web
 #Implement Dependencies
 Download the plugin from either NPM, Yarn, or GitHub. 
 
-![plugin-img](hoverslide-cdn.png)
+<img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/hoverslide-cdn.PNG" />
 
 Add the jQuery CDN link in your <head>
 
