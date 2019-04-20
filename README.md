@@ -37,10 +37,11 @@ The following is a list of default options:
 
 hoverSlide aligns right: -50px by default. To align to the left, do the following:
 
+1. Add the class “tab-left” to each button
+
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/left-align-html.PNG" />
 
-Add the class “tab-left” to each button
-Add left: ”-50px”, right: “” to override the right alignment, like so: 
+2. Add left: ”-50px”, right: “” to override the right alignment, like so: 
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/left-align.PNG" />
 
