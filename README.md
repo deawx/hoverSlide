@@ -21,7 +21,7 @@ Add the jQuery CDN link in your head.
 
 Add the div tags for your buttons in the HTML:
 
-<img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/jquery-cdn.PNG" />
+<img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/div-block.PNG" />
 
 Initialize hoverSlide in your script file for each button in your html. By default, the initial button has a top property of 60px. The top property for each subsequent button should be doubled, like so:
 
