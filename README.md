@@ -43,3 +43,5 @@ Add the class “tab-left” to each button
 Add left: ”-50px”, right: “” to override the right alignment, like so: 
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/left-align.PNG" />
+
+Enjoy this plugin! Feel free to comment or make suggestions on how to improve!
