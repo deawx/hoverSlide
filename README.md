@@ -25,7 +25,7 @@ Add the div tags for your buttons in the HTML. Add unique IDs inside the div tag
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/div-block.PNG" />
 
-Initialize hoverSlide in your script file for each button in your html. By default, the initial button has a top property of 60px. The top property for each subsequent button should be doubled, like so:
+Initialize hoverSlide in your script file for each button in your html. By default, the initial button has a top property of 60px. The top property for each subsequent button should be doubled:
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/initialize.PNG" />
 
@@ -43,7 +43,7 @@ hoverSlide aligns right: -50px by default. To align to the left, do the followin
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/left-align-html.PNG" />
 
-2. Add left: ”-50px”, right: “” to override the right alignment, like so: 
+2. Add left: ”-50px”, right: “” to override the right alignment: 
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/left-align.PNG" />
 
