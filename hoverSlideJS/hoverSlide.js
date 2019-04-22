@@ -22,33 +22,15 @@ $(document).ready(function(){
           color: "white",
           backgroundColor: "#abc",
           padding: "15px",
-          font:"400 15px Lato, sans-serif",
-          lineHeight: "1.8",
           left: "",
           right: "-50px",
           width: "150px",
           borderRadius: "5px",
           top: "60px",
           zIndex: 99,
-          opacity: "",
           cursor: "pointer"
         }, options );
 
-        return this.css({
-          position: settings.position,
-          color: settings.color,
-          backgroundColor: settings.backgroundColor,
-          padding: settings.padding,
-          font: settings.font,
-          lineHeight: settings.lineHeight,
-          left: settings.left,
-          right: settings.right,
-          width: settings.width,
-          borderRadius: settings.borderRadius,
-          top: settings.top,
-          zIndex: settings.zIndex,
-          opacity: settings.opacity,
-          cursor: settings.cursor
-        });
+        return this.css(settings);
     };
 }( jQuery ));
