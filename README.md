@@ -1,4 +1,4 @@
-# hoverSlide Navigation Plugin
+# hoverSlide
 A jQuery-based hoverable side navigation plugin, perfect for parallax and vertical scrolling websites!
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/hoverslide-thumbnail.PNG" />
