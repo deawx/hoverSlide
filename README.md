@@ -15,7 +15,7 @@ Download the plugin from GitHub. Add the following file link before your closing
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/hoverslide-cdn.PNG" />
 
-Add the jQuery CDN link in your head.
+Add the jQuery CDN link in the head of your HTML file:
   
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/jquery-cdn.PNG" />
 
