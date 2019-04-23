@@ -7,7 +7,7 @@ A jQuery-based hoverable side navigation plugin, perfect for parallax and vertic
 
 hoverSlide is a jQuery-based hoverable side navigation plugin, perfect for parallax and vertical scrolling websites. 
 hoverSlide works as a **[stand-alone navigation solution (demo)](https://jsfanatik.github.io/demo.html)**, 
-and can also work in sync with a **[topside navbar (demo)](https://jsfanatik.github.io/)**.
+and can also work in sync with a **[topside navbar (demo)](https://jsfanatik.github.io/demo-advanced.html)**.
 
 ## Add Dependencies
 
@@ -51,5 +51,7 @@ hoverSlide aligns right: -50px by default. To align to the left, do the followin
 2. Add left: ”-50px”, right: “” to override the right alignment: 
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/left-align.PNG" />
+
+See **[Left-align demo](https://jsfanatik.github.io/demo-left.html)**
 
 Enjoy this plugin! Feel free to comment or make suggestions on how to improve!
