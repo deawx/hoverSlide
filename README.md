@@ -25,10 +25,10 @@ Add the div tags for your buttons in the HTML. Add class="tab" to each div tag i
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/div-block.PNG" />
 
-Initialize hoverSlide for each button in your html. Add unique class names to each div tag (ex. tab1, tab2...). Assign each unique class name as a selector:
+Initialize hoverSlide for each button in your html. Add unique class names to each div tag (ex. tab1, tab2...). Assign each unique class name as a selector (NOTE: By default, the initial button has a top property of 60px. Double the top property for each subsequent button):
 
-<img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/initialize.PNG" />&nbsp;
-(NOTE: By default, the initial button has a top property of 60px. Double the top property for each subsequent button).
+<img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/initialize.PNG" />
+
 
 Add unique IDs inside the div tags to assign each button to its respective scrollTop function:
 
