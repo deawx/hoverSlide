@@ -6,8 +6,8 @@ A jQuery-based hoverable side navigation plugin, perfect for parallax and vertic
 ## Overview
 
 hoverSlide is a jQuery-based hoverable side navigation plugin, perfect for parallax and vertical scrolling websites. 
-hoverSlide works as a stand-alone navigation solution, 
-and can also work in sync with a topside navbar (check out the **[DEMO](https://jsfanatik.github.io/demo.html)**).
+hoverSlide works as a **[stand-alone navigation solution (demo)](https://jsfanatik.github.io/demo.html)**, 
+and can also work in sync with a **[topside navbar (demo)](https://jsfanatik.github.io/)**.
 
 ## Add Dependencies
 
