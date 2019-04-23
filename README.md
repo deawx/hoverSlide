@@ -52,6 +52,6 @@ hoverSlide aligns right: -50px by default. To align to the left, do the followin
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/left-align.PNG" />
 
-See **[Left-align demo](https://jsfanatik.github.io/demo-left.html)**
+See **[Left-align demo](https://jsfanatik.github.io/demo-left.html)**.
 
 Enjoy this plugin! Feel free to comment or make suggestions on how to improve!
