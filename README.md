@@ -30,7 +30,7 @@ Initialize hoverSlide for each button in your html. Add unique class names to ea
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/initialize.PNG" />
 
 
-Add unique IDs inside the div tags to assign each button to its respective scrollTop function (NOTE: the offset() method selector in each scrollTop function should represent a unique ID for each page):
+Add unique IDs inside the div tags to assign each button to its respective scrollTop function (NOTE: use page ID as the offset() method selector in each scrollTop function):
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/scrollTop.PNG" />
 
