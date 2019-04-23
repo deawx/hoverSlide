@@ -1,0 +1,228 @@
+<!--hoverSlide by JSFanatik 2019-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hoverSlide Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="demo.css" rel="stylesheet" type="text/css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<script src="/hoverSlideJS/hoverSlide.js"></script>
+
+<nav id="navbar-response" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar-resp">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar-resp">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="click1-resp"><a href="#">HOME</a></li>
+        <li id="click2-resp"><a href="#">Page 2</a></li>
+        <li id="click3-resp"><a href="#">Page 3</a></li>
+        <li id="click4-resp"><a href="#">Page 4</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="hsContainer" class="container-right">
+  <div id="click1-tab" class="tab tab1"> HOME</div>
+  <div id="click2-tab" class="tab tab2"> Page 2</div>
+  <div id="click3-tab" class="tab tab3"> Page 3</div>
+  <div id="click4-tab" class="tab tab4"> Page 4</div>
+</div>
+
+<script>
+  $(".tab1").hoverSlide({
+    backgroundColor: "#F1C40F",
+    color: "black"
+  });
+
+  $(".tab2").hoverSlide({
+    top: 120,
+    backgroundColor: "#2471A3"
+  });
+
+  $(".tab3").hoverSlide({
+    top: 180,
+    backgroundColor: "#229954"
+  });
+
+  $(".tab4").hoverSlide({
+    top: 240,
+    backgroundColor: "#CB4335"
+  });
+</script>
+
+<!-- Container (About Section) -->
+<div id="home" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 main-container">
+      <center>
+        <p class="main-landing-title">hoverSlide<font style="font-size: 24px;"> demo</font></p>
+        <p style="color: white; font-size: 24px">
+          by <a href="https://jsfanatik.github.io/" target="_blank"><img src="/img/jsfanatik-banner-final-small.jpg" style="width: 15%; border-radius: 5px"/></a>
+        </p>
+      </center><br/>
+      <center>
+        <div class="responsive-container">
+          <h1 style="color: white">Mobile Version</h1>
+          <p style="color: white">Tabs removed. Responsive Topnav triggers in smaller screen sizes.</p>
+        </div>
+      </center>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div id="page-2" class="container-fluid">
+  <div class="col-sm-12 main-container">
+    <center>
+      <p class="main-landing-title">Page 2</p>
+    </center>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="page-3" class="container-fluid">
+  <div class="col-sm-12 main-container">
+    <center>
+      <p class="main-landing-title">Page 3</p>
+    </center>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="page-4" class="container-fluid">
+  <div class="col-sm-12 main-container">
+    <center>
+      <p class="main-landing-title">Page 4</p>
+    </center>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>&copy; 2019&middot;JSFanatik</p>
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+$(document).ready(function(){
+  $(".container-left").hide();
+
+  $("#left-align").click(function(){
+    $(".container-right").hide();
+    $(".container-left").show();
+  });
+
+  $("#right-align").click(function(){
+    $(".container-left").hide();
+    $(".container-right").show();
+  });
+
+//MAIN
+  $("#click1-tab").click(function() {
+    $("html, body").animate(
+      {
+        scrollTop: $("#home").offset().top
+      },
+      900
+    );
+  });
+
+  $("#click2-tab").click(function() {
+    $("#hsContainer").show("slow");
+    $("html, body").animate(
+      {
+        scrollTop: $("#page-2").offset().top
+      },
+      900
+    );
+  });
+
+  $("#click3-tab").click(function() {
+    $("#hsContainer").show("slow");
+    $("html, body").animate(
+      {
+        scrollTop: $("#page-3").offset().top
+      },
+      900
+    );
+  });
+
+  $("#click4-tab").click(function() {
+    $("#hsContainer").show("slow");
+    $("html, body").animate(
+      {
+        scrollTop: $("#page-4").offset().top
+      },
+      900
+    );
+  });
+
+
+  //RESP
+    $("#click1-resp").click(function() {
+      $("html, body").animate(
+        {
+          scrollTop: $("#home").offset().top
+        },
+        900
+      );
+    });
+
+    $("#click2-resp").click(function() {
+      $("#hsContainer").show("slow");
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-2").offset().top
+        },
+        900
+      );
+    });
+
+    $("#click3-resp").click(function() {
+      $("#hsContainer").show("slow");
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-3").offset().top
+        },
+        900
+      );
+    });
+
+    $("#click4-resp").click(function() {
+      $("#hsContainer").show("slow");
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-4").offset().top
+        },
+        900
+      );
+    });
+});
+</script>
+
+</body>
+</html>
