@@ -1,3 +1,5 @@
+//hoverSlide by JSFanatik
+
 $(document).ready(function(){
   $(".tab").mouseover(function() {
     $(this).animate({ "left": "-=40px" }, 200 );
