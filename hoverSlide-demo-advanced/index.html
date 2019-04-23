@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link href="demo.css" rel="stylesheet" type="text/css">
+  <link href="demo-advanced.css" rel="stylesheet" type="text/css">
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -28,12 +28,12 @@
   </div>
   <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-right">
-      <li id="click1-main"><a href="#">HOME</a></li>
-      <li id="click2-main"><a href="#">Page 2</a></li>
-      <li id="click3-main"><a href="#">Page 3</a></li>
-      <li id="click4-main"><a href="#">Page 4</a></li>
-      <li id="click5-main"><a href="#">Page 5</a></li>
-      <li id="click6-main"><a href="#">Page 6</a></li>
+      <li id="click1-main"><a href="#home">HOME</a></li>
+      <li id="click2-main"><a href="#page-2">Page 2</a></li>
+      <li id="click3-main"><a href="#page-3">Page 3</a></li>
+      <li id="click4-main"><a href="#page-4">Page 4</a></li>
+      <li id="click5-main"><a href="#page-5">Page 5</a></li>
+      <li id="click6-main"><a href="#page-6">Page 6</a></li>
     </ul>
   </div>
 </nav>
@@ -49,12 +49,12 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar-resp">
       <ul class="nav navbar-nav navbar-right">
-        <li id="click1-resp"><a href="#">HOME</a></li>
-        <li id="click2-resp"><a href="#">Page 2</a></li>
-        <li id="click3-resp"><a href="#">Page 3</a></li>
-        <li id="click4-resp"><a href="#">Page 4</a></li>
-        <li id="click5-resp"><a href="#">Page 5</a></li>
-        <li id="click6-resp"><a href="#">Page 6</a></li>
+        <li id="click1-resp"><a href="#home">HOME</a></li>
+        <li id="click2-resp"><a href="#page-2">Page 2</a></li>
+        <li id="click3-resp"><a href="#page-3">Page 3</a></li>
+        <li id="click4-resp"><a href="#page-4">Page 4</a></li>
+        <li id="click5-resp"><a href="#page-5">Page 5</a></li>
+        <li id="click6-resp"><a href="#page-6">Page 6</a></li>
       </ul>
     </div>
   </div>
@@ -196,65 +196,21 @@ function scrollFunction() {
 document.getElementById("hsContainer").style.display = "none";
 
 $(document).ready(function(){
-//MAIN
-$("#click1-main").click(function() {
-  $("html, body").animate(
-    {
-      scrollTop: $("#navbar-main").offset().top
-    },
-    900
-  );
-});
 
-$("#click2-main").click(function() {
-  $("#hsContainer").show("slow");
-  $("html, body").animate(
-    {
-      scrollTop: $("#page-2").offset().top
-    },
-    900
-  );
-});
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
 
-$("#click3-main").click(function() {
-  $("#hsContainer").show("slow");
-  $("html, body").animate(
-    {
-      scrollTop: $("#page-3").offset().top
-    },
-    900
-  );
-});
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
 
-$("#click4-main").click(function() {
-  $("#hsContainer").show("slow");
-  $("html, body").animate(
-    {
-      scrollTop: $("#page-4").offset().top
-    },
-    900
-  );
-});
+        window.location.hash = hash;
+      });
+    }
+  });
 
-$("#click5-main").click(function() {
-  $("#hsContainer").show("slow");
-  $("html, body").animate(
-    {
-      scrollTop: $("#page-5").offset().top
-    },
-    900
-  );
-});
-
-$("#click6-main").click(function() {
-  $("#hsContainer").show("slow");
-  $("html, body").animate(
-    {
-      scrollTop: $("#page-6").offset().top
-    },
-    900
-  );
-});
 
 //tab
   $("#click1-tab").click(function() {
@@ -315,67 +271,6 @@ $("#click6-main").click(function() {
       900
     );
   });
-
-
-  //RESP
-    $("#click1-resp").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $("#home").offset().top
-        },
-        900
-      );
-    });
-
-    $("#click2-resp").click(function() {
-      $("#hsContainer").show("slow");
-      $("html, body").animate(
-        {
-          scrollTop: $("#page-2").offset().top
-        },
-        900
-      );
-    });
-
-    $("#click3-resp").click(function() {
-      $("#hsContainer").show("slow");
-      $("html, body").animate(
-        {
-          scrollTop: $("#page-3").offset().top
-        },
-        900
-      );
-    });
-
-    $("#click4-resp").click(function() {
-      $("#hsContainer").show("slow");
-      $("html, body").animate(
-        {
-          scrollTop: $("#page-4").offset().top
-        },
-        900
-      );
-    });
-
-    $("#click5-resp").click(function() {
-      $("#hsContainer").show("slow");
-      $("html, body").animate(
-        {
-          scrollTop: $("#page-5").offset().top
-        },
-        900
-      );
-    });
-
-    $("#click6-resp").click(function() {
-      $("#hsContainer").show("slow");
-      $("html, body").animate(
-        {
-          scrollTop: $("#page-6").offset().top
-        },
-        900
-      );
-    });
 });
 </script>
 
