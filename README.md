@@ -21,7 +21,7 @@ Add the jQuery CDN link in your head.
 
 ## Initialize
 
-Add the div tags for your buttons in the HTML. Add class="tab" to each div tag in order to enable the hover-slide effect: 
+Add the div tags for your buttons in the HTML. Add class="tab" to each tag in order to connect the tags to the hover-slide function: 
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/div-block.PNG" />
 
