@@ -1,0 +1,162 @@
+/*hoverSlide by JSFanatik 2019*/
+
+#navbar-response {
+  display: none;
+}
+
+.responsive-container {
+  display: none;
+}
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  background-position: top center;
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+}
+
+#home {
+ background-color: #7B241C;
+ min-height: 100%;
+}
+
+#page-2 {
+  background-color: #F7DC6F;
+  min-height: 100%;
+}
+
+#page-3 {
+  background-color: #48C9B0;
+  min-height: 100%;
+}
+
+#page-4 {
+  background-color: #5499C7;
+  min-height: 100%;
+}
+
+#page-5 {
+  background-color: #ECF0F1;
+  min-height: 100%;
+}
+
+#page-6 {
+  background-color: #E59866;
+  min-height: 100%;
+}
+
+.main-container {
+  margin-top: 100px;
+}
+
+.main-landing-title {
+  font-size: 124px;
+  font-weight: bold;
+  color: white;
+}
+
+.jumbotron {
+  background-color: #f4511e;
+  color: #fff;
+  padding: 100px 25px;
+  font-family: Montserrat, sans-serif;
+}
+
+.container-fluid {
+  padding: 50px 140px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #54555E;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4511e !important;
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #f4511e;
+}
+
+.col-sm-6 {
+  padding: 0 50px;
+}
+
+.tab-left {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+
+  #navbar-main {
+    display: none;
+  }
+
+  #navbar-response {
+    display: block;
+  }
+
+  .main-landing-title {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .tab1, .tab2, .tab3, .tab4, .tab5, .tab6 {
+    display: none;
+  }
+
+  /*.col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }*/
+
+  .container-fluid {
+    padding: 60px 50px;
+  }
+
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .hoverSlide-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .responsive-container {
+    display: block;
+  }
+
+  .main-landing-title {
+    font-size: 56px;
+    font-weight: bold;
+    color: white;
+  }
+
+  #left-align, #right-align {
+    display: none;
+  }
+}

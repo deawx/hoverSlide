@@ -1,0 +1,391 @@
+<!--hoverSlide by JSFanatik 2019-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hoverSlide Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="demo.css" rel="stylesheet" type="text/css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<script src="/hoverSlideJS/hoverSlide.js"></script>
+
+<nav id="navbar-main" class="navbar navbar-default">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#myPage"><b>JSFanatik</b></a>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+      <li id="click1-main"><a href="#">HOME</a></li>
+      <li id="click2-main"><a href="#">Page 2</a></li>
+      <li id="click3-main"><a href="#">Page 3</a></li>
+      <li id="click4-main"><a href="#">Page 4</a></li>
+      <li id="click5-main"><a href="#">Page 5</a></li>
+      <li id="click6-main"><a href="#">Page 6</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav id="navbar-response" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar-resp">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar-resp">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="click1-resp"><a href="#">HOME</a></li>
+        <li id="click2-resp"><a href="#">Page 2</a></li>
+        <li id="click3-resp"><a href="#">Page 3</a></li>
+        <li id="click4-resp"><a href="#">Page 4</a></li>
+        <li id="click5-resp"><a href="#">Page 5</a></li>
+        <li id="click6-resp"><a href="#">Page 6</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="leftContainer" class="container-left">
+  <div id="click1-tab-left" class="tab-left tab1-left"> HOME</div>
+  <div id="click2-tab-left" class="tab-left tab2-left"> Page 2</div>
+  <div id="click3-tab-left" class="tab-left tab3-left"> Page 3</div>
+  <div id="click4-tab-left" class="tab-left tab4-left"> Page 4</div>
+  <div id="click5-tab-left" class="tab-left tab5-left"> Page 5</div>
+  <div id="click6-tab-left" class="tab-left tab6-left"> Page 6</div>
+</div>
+
+<script>
+    $(".tab1-left").hoverSlide({
+      left: "-50px",
+      right: "",
+      backgroundColor: "#F1C40F",
+      color: "black"
+    });
+
+    $(".tab2-left").hoverSlide({
+      top: 120,
+      left: "-50px",
+      right: "",
+      backgroundColor: "#2471A3"
+    });
+
+    $(".tab3-left").hoverSlide({
+      top: 180,
+      left: "-50px",
+      right: "",
+      backgroundColor: "#229954"
+    });
+
+    $(".tab4-left").hoverSlide({
+      top: 240,
+      left: "-50px",
+      right: "",
+      backgroundColor: "#CB4335"
+    });
+
+    $(".tab5-left").hoverSlide({
+      top: 300,
+      left: "-50px",
+      right: "",
+      backgroundColor: "#8E44AD"
+    });
+
+    $(".tab6-left").hoverSlide({
+      top: 360,
+      left: "-50px",
+      right: "",
+      backgroundColor: "#5D6D7E"
+    });
+
+</script>
+
+<!-- Container (About Section) -->
+<div id="home" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 main-container">
+      <center>
+        <p class="main-landing-title">hoverSlide<font style="font-size: 24px;"> demo</font></p>
+        <p style="color: white; font-size: 24px">
+          by <a href="https://jsfanatik.github.io/" target="_blank"><img src="/img/jsfanatik-banner-final-small.jpg" style="width: 15%; border-radius: 5px"/></a>
+        </p>
+      </center><br/>
+      <center>
+        <div class="responsive-container">
+          <h1 style="color: white">Mobile Version</h1>
+          <p style="color: white">Tabs removed. Responsive Topnav triggers in smaller screen sizes.</p>
+        </div>
+      </center>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div id="page-2" class="container-fluid">
+  <div class="col-sm-12 main-container">
+    <center>
+      <p class="main-landing-title">Page 2</p>
+    </center>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="page-3" class="container-fluid">
+  <div class="col-sm-12 main-container">
+    <center>
+      <p class="main-landing-title">Page 3</p>
+    </center>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="page-4" class="container-fluid">
+  <div class="col-sm-12 main-container">
+    <center>
+      <p class="main-landing-title">Page 4</p>
+    </center>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="page-5" class="container-fluid">
+  <div class="col-sm-12 main-container">
+    <center>
+      <p class="main-landing-title" style="color:black">Page 5</p>
+    </center>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="page-6" class="container-fluid">
+  <div class="col-sm-12 main-container">
+    <center>
+      <p class="main-landing-title">Page 6</p>
+    </center>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>&copy; 2019&middot;JSFanatik</p>
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 0) {
+    $("#leftContainer").show("slow");
+  } else {
+    $("#leftContainer").hide("slow");
+  }
+}
+
+document.getElementById("leftContainer").style.display = "none";
+
+$(document).ready(function(){
+
+//MAIN
+$("#click1-main").click(function() {
+  $("html, body").animate(
+    {
+      scrollTop: $("#navbar-main").offset().top
+    },
+    900
+  );
+});
+
+$("#click2-main").click(function() {
+  $("#hsContainer").show("slow");
+  $("html, body").animate(
+    {
+      scrollTop: $("#page-2").offset().top
+    },
+    900
+  );
+});
+
+$("#click3-main").click(function() {
+  $("#hsContainer").show("slow");
+  $("html, body").animate(
+    {
+      scrollTop: $("#page-3").offset().top
+    },
+    900
+  );
+});
+
+$("#click4-main").click(function() {
+  $("#hsContainer").show("slow");
+  $("html, body").animate(
+    {
+      scrollTop: $("#page-4").offset().top
+    },
+    900
+  );
+});
+
+$("#click5-main").click(function() {
+  $("#hsContainer").show("slow");
+  $("html, body").animate(
+    {
+      scrollTop: $("#page-5").offset().top
+    },
+    900
+  );
+});
+
+$("#click6-main").click(function() {
+  $("#hsContainer").show("slow");
+  $("html, body").animate(
+    {
+      scrollTop: $("#page-6").offset().top
+    },
+    900
+  );
+});
+
+
+  //tab-left
+    $("#click1-tab-left").click(function() {
+      $("html, body").animate(
+        {
+          scrollTop: $("#navbar-main").offset().top
+        },
+        700
+      );
+    });
+
+    $("#click2-tab-left").click(function() {
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-2").offset().top
+        },
+        700
+      );
+    });
+
+    $("#click3-tab-left").click(function() {
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-3").offset().top
+        },
+        700
+      );
+    });
+
+    $("#click4-tab-left").click(function() {
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-4").offset().top
+        },
+        700
+      );
+    });
+
+    $("#click5-tab-left").click(function() {
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-5").offset().top
+        },
+        700
+      );
+    });
+
+    $("#click6-tab-left").click(function() {
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-6").offset().top
+        },
+        700
+      );
+    });
+
+
+  //RESP
+    $("#click1-resp").click(function() {
+      $("html, body").animate(
+        {
+          scrollTop: $("#home").offset().top
+        },
+        900
+      );
+    });
+
+    $("#click2-resp").click(function() {
+      $("#hsContainer").show("slow");
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-2").offset().top
+        },
+        900
+      );
+    });
+
+    $("#click3-resp").click(function() {
+      $("#hsContainer").show("slow");
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-3").offset().top
+        },
+        900
+      );
+    });
+
+    $("#click4-resp").click(function() {
+      $("#hsContainer").show("slow");
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-4").offset().top
+        },
+        900
+      );
+    });
+
+    $("#click5-resp").click(function() {
+      $("#hsContainer").show("slow");
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-5").offset().top
+        },
+        900
+      );
+    });
+
+    $("#click6-resp").click(function() {
+      $("#hsContainer").show("slow");
+      $("html, body").animate(
+        {
+          scrollTop: $("#page-6").offset().top
+        },
+        900
+      );
+    });
+});
+</script>
+
+</body>
+</html>
