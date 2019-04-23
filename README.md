@@ -21,9 +21,13 @@ Add the jQuery CDN link in your head.
 
 ## Initialize
 
-Add the div tags for your buttons in the HTML. Add unique IDs inside the div tags to assign each button to its respective scrollTop function:
+Add the div tags for your buttons in the HTML: 
 
 <img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/div-block.PNG" />
+
+Add unique IDs inside the div tags to assign each button to its respective scrollTop function:
+
+<img src="https://github.com/jsfanatik/hoverSlideJS/blob/master/plugin-img/scrollTop.PNG" />
 
 Initialize hoverSlide in your script tags for each button in your html. By default, the initial button has a top property of 60px. The top property for each subsequent button should be doubled:
 
